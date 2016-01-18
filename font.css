@@ -1,0 +1,38 @@
+@font-face {
+    font-family:'centaur';
+	src:url('fonts/CENTAUR.TTF') ;
+  }
+  
+@font-face {
+    font-family:'GothicRus';
+	src:url('fonts/GothicRus_Medium.ttf') ;
+  }
+
+@font-face {
+    font-family:'centaur';
+	src:url('fonts/CENTAUR.TTF') ;
+  }
+  
+ @font-face {
+    font-family:'Raleway-Regular';
+	src:url('fonts/Raleway-Regular.ttf') ;
+  }
+  
+  @font-face {
+    font-family:'Raleway-Black';
+	src:url('fonts/Raleway-Black.ttf') ;
+  }
+  
+  @font-face {
+    font-family:'Raleway-Medium';
+	src:url('fonts/Raleway-Medium.ttf') ;
+  }
+ @font-face {
+    font-family:'Raleway-Bold';
+	src:url('fonts/Raleway-Bold.ttf') ;
+  }
+  
+  @font-face {
+    font-family:'Raleway-Light';
+	src:url('fonts/Raleway-Light.ttf') ;
+  }
