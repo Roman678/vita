@@ -1,0 +1,49 @@
+addDefaultCharset utf-8
+
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteRule (.*).css $1.css [L]
+RewriteRule (.*).js $1.js [L]
+RewriteRule (.*).ttf $1.ttf [L]
+RewriteRule (.*).png $1.png [L]
+RewriteRule (.*).jpg $1.jpg [L]
+RewriteRule img/(.*) img/$1 [L,QSA]
+
+RewriteRule ^([a-zA-Z0-9_\-]+)$ /$1/  [R,L]
+RewriteRule ^([a-zA-Z0-9_\-]+)/$ index.php?lang=$1 [L,QSA]
+
+RewriteCond %{THE_REQUEST} !\.php(\?.|\ .)
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)$ /$1/$2/ [R,L]
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)/$ index.php?lang=$1&category=$2 [L,QSA]
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)$ index.php?lang=$1&category=$2 [L,QSA]
+
+
+
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)$ /$1/$2/$3 [R,L]
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)/$ index.php?lang=$1&category=$2&post=$3 [L,QSA]
+RewriteRule ^([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)/([a-zA-Z0-9_\-]+)$ index.php?lang=$1&category=$2&post=$3 [L,QSA]
+<ifmodule mod_expires.c>
+<filesmatch ".(jpg|gif|png|css|js|ttf)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
