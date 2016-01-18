@@ -21,13 +21,6 @@
 </head>
 
 <body>
-
 {content}
-
-<div class="class1">R</div>
-<div class="class2">O</div>
-<div class="class3">M</div>
-<div class="class4">A</div>
-
 </body>
 </html>
