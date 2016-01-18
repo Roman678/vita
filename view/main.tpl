@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="utf-8">
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +13,10 @@
 
     <script src="/view/js/jquery-1.11.2.js"></script>
     <script src="/view/js/bootstrap.js"></script>
+
+<meta charset="utf-8">
+<title>{title}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
